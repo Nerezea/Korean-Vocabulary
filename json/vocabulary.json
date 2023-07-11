@@ -1,0 +1,12 @@
+{
+  "vocabulary": [
+    {
+      "id": 1,
+      "word-german": "Hangul",
+      "word-english": "Hangul",
+      "word-korean": "한글",
+      "pron-korean": "hangeul",
+      "kb-german": "gksrmf"
+    }
+  ]
+}
