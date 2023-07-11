@@ -6,8 +6,10 @@
   "main": "index.js",
   "scripts": {
     "json": "json-server --watch ./json/vocabulary.json",
-    "index": "sass --watch ./css/scss/index.scss ./css/index.css --no-source-map",
-    "header": "sass --watch ./css/scss/header.scss ./css/header.css --no-source-map"
+    "index.js": "nodemon ./js/index.js",
+    "json.js": "nodemon ./js/json.js",
+    "index.scss": "sass --watch ./css/scss/index.scss ./css/index.css --no-source-map",
+    "header.scss": "sass --watch ./css/scss/header.scss ./css/header.css --no-source-map"
   },
   "repository": {
     "type": "git",
