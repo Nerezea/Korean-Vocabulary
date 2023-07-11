@@ -17,10 +17,16 @@
       </nav>
     </header>
     <main>
-      <div id="word_vocabulary">
-        <input type="text" name="" id="input_vocabulary" />
-        <input type="button" value="new word" id="word_vocabulary" />
-      </div>
+      <form action="submit" id="form_get_new_word">
+        <label for="input_vocabulary" id="current_word">Word</label>
+        <input
+          type="text"
+          name="input_vocabulary"
+          id="input_vocabulary"
+          placeholder="type the word in korean"
+        />
+        <button type="submit">new word</button>
+      </form>
     </main>
     <footer>
       <div class="reserved">®Reserved by Dennis Doedelkopf</div>
