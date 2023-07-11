@@ -1,0 +1,24 @@
+{
+  "name": "korean-vocabulary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "index": "sass --watch ./css/scss/index.scss ./css/index.css --no-source-map",
+    "header": "sass --watch ./css/scss/header.scss ./css/header.css --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nerezea/Korean-Vocabulary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nerezea/Korean-Vocabulary/issues"
+  },
+  "homepage": "https://github.com/Nerezea/Korean-Vocabulary#readme",
+  "dependencies": {
+    "sass": "^1.63.6"
+  }
+}
