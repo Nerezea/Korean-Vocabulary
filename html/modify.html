@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Korean Vocabulary - Modify</title>
+    <link rel="stylesheet" href="../css/modify.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Korean Vocabulary</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="modify.html">Vocabulary</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="submit" id="form_add_new_word">
+        <input
+          type="text"
+          name=""
+          id="new_german_word"
+          placeholder="german word"
+        />
+        <input
+          type="text"
+          name=""
+          id="new_english_word"
+          placeholder="english word"
+        />
+        <input
+          type="text"
+          name=""
+          id="new_korean_word"
+          placeholder="korean word"
+        />
+        <input
+          type="text"
+          name=""
+          id="new_pronounciation"
+          placeholder="pronounciation"
+        />
+        <input
+          type="text"
+          name=""
+          id="new_german_keyboard"
+          placeholder="german keyboard"
+        />
+        <input
+          type="text"
+          name=""
+          id="new_english_keyboard"
+          placeholder="english keyboard"
+        />
+        <button type="submit">add new</button>
+      </form>
+
+      <form action="submit" id="form_delete_word">
+        <input type="text" name="" id="delete_word" />
+        <button type="submit">delete word</button>
+      </form>
+    </main>
+    <footer>
+      <div class="reserved">®Reserved by Dennis Doedelkopf</div>
+    </footer>
+
+    <!-- JS Import -->
+    <script type="module" src="../js/json.js"></script>
+  </body>
+</html>
