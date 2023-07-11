@@ -8,8 +8,8 @@
     "json": "json-server --watch ./json/vocabulary.json",
     "index.js": "nodemon ./js/index.js",
     "json.js": "nodemon ./js/json.js",
-    "index.scss": "sass --watch ./css/scss/index.scss ./css/index.css --no-source-map",
-    "header.scss": "sass --watch ./css/scss/header.scss ./css/header.css --no-source-map"
+    "header.scss": "sass --watch ./css/scss/header.scss ./css/header.css --no-source-map",
+    "footer.scss": "sass --watch ./css/scss/footer.scss ./css/footer.css --no-source-map"
   },
   "repository": {
     "type": "git",

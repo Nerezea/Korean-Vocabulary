@@ -12,7 +12,7 @@ const deleteWordField = document.getElementById("delete_word");
 
 const addNewWord = (event) => {
   event.preventDefault();
-
+  // TODO: add option if word is empty
   if (true) {
     let data = {
       "word-german": addNewGermanWord.value,
@@ -36,6 +36,7 @@ const addNewWord = (event) => {
   addNewWordForm.reset();
 };
 
+// TODO: use words instead of id
 const deleteID = async (event) => {
   event.preventDefault();
   try {

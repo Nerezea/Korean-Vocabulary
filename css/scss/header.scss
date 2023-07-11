@@ -1,0 +1,30 @@
+@import url(https://fonts.bunny.net/css?family=aclonica:400);
+
+header {
+  h1 {
+    color: white;
+    padding: 2%;
+
+    font-size: 4rem;
+    font-family: "Aclonica", sans-serif;
+    text-align: center;
+  }
+
+  nav {
+    background-color: rgba(255, 255, 255, 0.178);
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 1%;
+
+      li {
+        font-size: 2.5rem;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}

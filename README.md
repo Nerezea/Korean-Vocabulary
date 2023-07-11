@@ -1,9 +1,13 @@
 # Korean-Vocabulary
 
-To-Do
+To-Do:
 
 1. delete Field with word instead of id
 2. add new Word -> check inputs instead of always true
+
+Bugs:
+
+1. Currently no knwon bugs
 
 Build Order:
 
