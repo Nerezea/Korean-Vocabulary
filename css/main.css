@@ -11,3 +11,8 @@
   text-decoration: none;
   list-style-type: none;
 }
+
+body {
+  background: url(../images/alexander-chua-XM_MIYoB_bE-unsplash.jpg);
+  background-size: cover;
+}

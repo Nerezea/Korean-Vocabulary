@@ -2,11 +2,6 @@
 @import url(./header.css);
 @import url(./footer.css);
 
-body {
-  background: url(../images/pic05.jpg);
-  background-size: cover;
-}
-
 form {
   padding: 2%;
 
@@ -31,7 +26,8 @@ form {
   button {
     display: block;
     background-color: rgba(255, 255, 255, 0.555);
-    width: 10%;
+    width: 20%;
+    min-width: 80px;
     padding: 10px;
     margin: 8px 0;
   }
