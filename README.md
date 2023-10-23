@@ -19,3 +19,4 @@ Build Order:
 6. "npm install json-server" or "-g" for global (to check for all global use "npm ls -g")
 7. "json-server --watch ./json/vocabulary.json" or use "npx" in front if it does not work correctly
 8. add {"type": "module"} to package.json to use export/import
+9. npx create-react-app@latest "project-name"

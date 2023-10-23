@@ -8,6 +8,115 @@
       "kb-german": "gksrmf",
       "kb-english": "gksrmf",
       "id": 1
+    },
+    {
+      "word-german": "Süßkartoffel",
+      "word-english": "sweet potato",
+      "word-korean": "고구마",
+      "pron-korean": "koguma",
+      "kb-german": "rhrnak",
+      "kb-english": "rhrnak",
+      "id": 2
+    },
+    {
+      "word-german": "hund",
+      "word-english": "dog",
+      "word-korean": "개",
+      "pron-korean": "ke",
+      "kb-german": "ro",
+      "kb-english": "ro",
+      "id": 3
+    },
+    {
+      "word-german": "alle, alles",
+      "word-english": "all, everything",
+      "word-korean": "다",
+      "pron-korean": "ta",
+      "kb-german": "ek",
+      "kb-english": "ek",
+      "id": 4
+    },
+    {
+      "word-german": "Möbel",
+      "word-english": "furniture",
+      "word-korean": "가구",
+      "pron-korean": "kago",
+      "kb-german": "rkrn",
+      "kb-english": "rkrn",
+      "id": 5
+    },
+    {
+      "word-german": "Land",
+      "word-english": "country",
+      "word-korean": "나라",
+      "pron-korean": "nara",
+      "kb-german": "skfk",
+      "kb-english": "skfk",
+      "id": 6
+    },
+    {
+      "word-german": "Lied",
+      "word-english": "song",
+      "word-korean": "노래",
+      "pron-korean": "dore",
+      "kb-german": "shfo",
+      "kb-english": "shfo",
+      "id": 7
+    },
+    {
+      "word-german": "Wer",
+      "word-english": "who",
+      "word-korean": "누구",
+      "pron-korean": "dugo",
+      "kb-german": "snrn",
+      "kb-english": "snrn",
+      "id": 8
+    },
+    {
+      "word-german": "Schneidbrett",
+      "word-english": "cutting board",
+      "word-korean": "도마",
+      "pron-korean": "toma",
+      "kb-german": "ehak",
+      "kb-english": "ehak",
+      "id": 9
+    },
+    {
+      "word-german": "Sand",
+      "word-english": "sand",
+      "word-korean": "모래",
+      "pron-korean": "bode / bore",
+      "kb-german": "ahfo",
+      "kb-english": "ahfo",
+      "id": 10
+    },
+    {
+      "word-german": "benehmen",
+      "word-english": "manners",
+      "word-korean": "매너",
+      "pron-korean": "manoa",
+      "kb-german": "aosj",
+      "kb-english": "aosj",
+      "id": 11
+    },
+    {
+      "word-german": "alle, jeder",
+      "word-english": "everyone",
+      "word-korean": "모두",
+      "pron-korean": "botu",
+      "kb-german": "ahen",
+      "kb-english": "ahen",
+      "id": 12
+    },
+    {
+      "word-german": "ältere schwester",
+      "word-english": "older sister",
+      "word-korean": "누나",
+      "pron-korean": "duna",
+      "kb-german": "snsk",
+      "kb-english": "snsk",
+      "id": 13
     }
-  ]
+  ],
+  "sentences": []
 }
