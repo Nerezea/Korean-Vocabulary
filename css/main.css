@@ -1,3 +1,4 @@
+@import url(https://fonts.bunny.net/css?family=aclonica:400);
 :root {
   height: 100vh;
   width: 100vw;
@@ -15,4 +16,83 @@
 body {
   background: url(../images/pexels-pixabay-373290.jpg);
   background-size: cover;
+}
+
+header h1 {
+  color: white;
+  padding: 2%;
+  font-size: 4rem;
+  font-family: "Aclonica", sans-serif;
+  text-align: center;
+}
+header nav {
+  background-color: rgba(255, 255, 255, 0.178);
+}
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+}
+header nav ul li {
+  font-size: 2.5rem;
+}
+header nav ul li a {
+  color: white;
+}
+
+footer .reserved {
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+form {
+  padding: 2%;
+}
+form label {
+  color: white;
+  font-size: 2rem;
+}
+form input {
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0;
+  background-color: rgba(255, 255, 255, 0.178);
+}
+form ::placeholder {
+  color: grey;
+}
+form button {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.555);
+  width: 20%;
+  min-width: 80px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+form {
+  padding: 2%;
+}
+form input {
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin: 8px 0;
+  background-color: rgba(255, 255, 255, 0.178);
+}
+form ::placeholder {
+  color: grey;
+}
+form button {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.555);
+  width: 20%;
+  min-width: 80px;
+  padding: 10px;
+  margin: 8px 0;
 }

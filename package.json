@@ -12,7 +12,8 @@
     "footer.scss": "sass --watch ./css/scss/footer.scss ./css/footer.css --no-source-map",
     "index.scss": "sass --watch ./css/scss/index.scss ./css/index.css --no-source-map",
     "modify.scss": "sass --watch ./css/scss/modify.scss ./css/modify.css --no-source-map",
-    "rules.scss": "sass --watch ./css/scss/rules.scss ./css/rules.css --no-source-map"
+    "rules.scss": "sass --watch ./css/scss/rules.scss ./css/rules.css --no-source-map",
+    "main.scss": "sass --watch ./css/scss/main.scss ./css/main.css --no-source-map"
   },
   "repository": {
     "type": "git",
