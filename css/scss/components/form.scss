@@ -1,22 +1,27 @@
 form {
   padding: 2%;
 
+  label {
+    color: $color-white;
+    font-size: 2rem;
+  }
+
   input {
-    color: white;
+    color: $color-white;
     display: block;
     width: 100%;
     padding: 6px;
     margin: 8px 0;
-    background-color: rgba(255, 255, 255, 0.178);
+    background-color: $opacity-grey;
   }
 
   ::placeholder {
-    color: grey;
+    color: $color-grey;
   }
 
   button {
     display: block;
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color: $opacity-grey-2;
     width: 20%;
     min-width: 80px;
     padding: 10px;
