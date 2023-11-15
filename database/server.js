@@ -36,12 +36,15 @@ app.post("/updateVocabularyWords", async (req, res) => {
   try {
     const jsonArray = jsonConverterWords(vocabularyArray.vocabulary);
 
-    jsonArray.forEach((element) => {
-      const word = new Word(element);
-      word.save();
+    jsonArray.forEach(async (element) => {
+      const { word_german } = element;
+      const exist = await Word.findOne({ word_german: word_german });
+      if (exist === null) {
+        const word = new Word(element);
+        word.save();
+      }
     });
-
-    res.status(200).send("succesful");
+    res.status(200).send("Updated the Vocabulary List");
   } catch (error) {
     res.status(400).send(`Failed: ${error.message}`);
   }
