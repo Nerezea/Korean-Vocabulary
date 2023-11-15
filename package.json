@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "json": "json-server --watch ./json/vocabulary.json",
-    "scss": "sass --watch ./css/scss/main.scss ./css/main.css --no-source-map",
+    "scss": "sass --watch ./css/scss/app.scss ./css/app.css --no-source-map",
     "index.js": "nodemon ./js/index.js",
     "json.js": "nodemon ./js/json.js"
   },

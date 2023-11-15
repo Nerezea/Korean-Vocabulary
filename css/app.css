@@ -1,4 +1,8 @@
 @import url(https://fonts.bunny.net/css?family=aclonica:400);
+main {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 :root {
   height: 100vh;
   width: 100vw;
@@ -26,7 +30,7 @@ header h1 {
   text-align: center;
 }
 header nav {
-  background-color: rgba(255, 255, 255, 0.178);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 header nav ul {
   display: flex;
@@ -60,7 +64,7 @@ form input {
   width: 100%;
   padding: 6px;
   margin: 8px 0;
-  background-color: rgba(255, 255, 255, 0.178);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 form ::placeholder {
   color: grey;
