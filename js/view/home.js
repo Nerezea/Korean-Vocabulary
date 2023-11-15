@@ -1,4 +1,4 @@
-import { randomWordFromVocabulary } from "./random.js";
+import { randomWordFromVocabulary } from "../controller/randomizer.js";
 
 // start json server
 const url = "http://localhost:3000/vocabulary";
