@@ -2,6 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import Word from "../js/model/word.js";
+import { jsonConverterWords } from "../js/controller/jsonConverter.js";
+import vocabularyArray from "../json/vocabulary.json" assert { type: "json" };
 
 dotenv.config();
 
@@ -25,6 +27,21 @@ app.post("/createWord", async (req, res) => {
     const word = new Word(req.body);
     const response = await word.save();
     res.status(200).send(response);
+  } catch (error) {
+    res.status(400).send(`Failed: ${error.message}`);
+  }
+});
+
+app.post("/updateVocabularyWords", async (req, res) => {
+  try {
+    const jsonArray = jsonConverterWords(vocabularyArray.vocabulary);
+
+    jsonArray.forEach((element) => {
+      const word = new Word(element);
+      word.save();
+    });
+
+    res.status(200).send("succesful");
   } catch (error) {
     res.status(400).send(`Failed: ${error.message}`);
   }

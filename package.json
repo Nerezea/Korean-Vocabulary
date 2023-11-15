@@ -1,9 +1,9 @@
 {
   "name": "korean-vocabulary",
-  "version": "1.0.0",
+  "version": "0.8.1",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "./html/home.html",
   "scripts": {
     "database": "nodemon node ./database/server.js",
     "json": "json-server --watch ./json/vocabulary.json",
