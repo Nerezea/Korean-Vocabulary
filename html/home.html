@@ -18,7 +18,7 @@
       </nav>
     </header>
     <main>
-      <div class="home-container">
+      <div class="home-container" id="home-container">
         <form action="submit" id="form_get_new_word">
           <label for="input_vocabulary" id="current_word">Word</label>
           <input
@@ -27,42 +27,55 @@
             id="input_vocabulary"
             placeholder="type the word in korean"
           />
-          <button type="submit">
-            <a href="#popup">Check Word</a>
-          </button>
+
+          <input
+            class="popup-button"
+            type="button"
+            value="Check Word"
+            onclick="window.location.href=`#popup`"
+          />
+
+          <div class="popup" id="popup">
+            <div class="popup-content">
+              <div class="popup-left">
+                <img
+                  src="../images/pexels-ethan-brooke-2246789.jpg"
+                  alt="ss"
+                  class="popup-image"
+                />
+                <img
+                  src="../images/pexels-ethan-brooke-2128042.jpg"
+                  alt="dd"
+                  class="popup-image"
+                />
+              </div>
+              <div class="popup-right">
+                <!-- <a href="./home.html" class="popup-close">&times;</a> -->
+                <h2
+                  class="popup-heading u-margin-bottom-small"
+                  id="popup_heading"
+                >
+                  U are Right
+                </h2>
+                <p class="popup-text u-margin-bottom-medium" id="popup_text">
+                  ........ HIER STEHT TEXT
+                </p>
+                <input
+                  class="popup-button"
+                  type="submit"
+                  value="Get a new Word"
+                  onclick="window.location.href=`#home-container`"
+                />
+                <!-- <button class="popup-button" type="submit">Get New Word</button> -->
+              </div>
+            </div>
+          </div>
         </form>
       </div>
     </main>
     <footer>
       <div class="reserved">®Reserved by Dennis Doedelkopf</div>
     </footer>
-
-    <div class="popup" id="popup">
-      <div class="popup-content">
-        <div class="popup-left">
-          <img
-            src="../images/pexels-ethan-brooke-2246789.jpg"
-            alt="ss"
-            class="popup-image"
-          />
-          <img
-            src="../images/pexels-ethan-brooke-2128042.jpg"
-            alt="dd"
-            class="popup-image"
-          />
-        </div>
-        <div class="popup-right">
-          <a href="./home.html" class="popup-close">&times;</a>
-          <h2 class="popup-heading u-margin-bottom-small">U are Right</h2>
-          <p class="popup-text u-margin-bottom-medium">
-            ........ HIER STEHT TEXT
-          </p>
-          <button class="popup-button" type="submit">
-            <a href="">Button</a>
-          </button>
-        </div>
-      </div>
-    </div>
 
     <!-- JS Import -->
     <script type="module" src="../js/view/home.js"></script>

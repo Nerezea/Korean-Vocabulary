@@ -6,6 +6,8 @@ const url = "http://localhost:3000/vocabulary";
 const formGetNewWord = document.getElementById("form_get_new_word");
 const currentWord = document.getElementById("current_word");
 const inputWord = document.getElementById("input_vocabulary");
+const headingText = document.getElementById("popup_heading");
+const text = document.getElementById("popup_text");
 
 // TODO: Look at current Word and see if u typed it right
 
@@ -17,6 +19,8 @@ async function submitWord(event) {
 
   console.log(currentWord.innerText);
   console.log(inputWord.value);
+  console.log(headingText.innerText);
+  console.log(text.innerText);
 
   formGetNewWord.reset();
 }

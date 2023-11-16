@@ -92,6 +92,7 @@ form input {
 form ::placeholder {
   color: grey;
 }
+form a,
 form button {
   display: block;
   background-color: rgba(255, 255, 255, 0.555);
