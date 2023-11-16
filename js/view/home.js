@@ -15,6 +15,9 @@ async function submitWord(event) {
   const vocabularyList = await getNewWord();
   currentWord.innerText = randomWordFromVocabulary(vocabularyList);
 
+  console.log(currentWord.innerText);
+  console.log(inputWord.value);
+
   formGetNewWord.reset();
 }
 

@@ -1,6 +1,26 @@
 @import url(https://fonts.bunny.net/css?family=aclonica:400);
-main {
-  background-color: rgba(255, 255, 255, 0.1);
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem;
 }
 
 :root {
@@ -19,6 +39,10 @@ main {
 
 body {
   background-color: black;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 header h1 {
@@ -75,6 +99,75 @@ form button {
   min-width: 80px;
   padding: 10px;
   margin: 8px 0;
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup:target .popup-content {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup .popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  background-color: white;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  overflow: hidden;
+  transform: translate(-50%, -50%) scale(0.2);
+  transition: all 0.5s 0.2s;
+  display: flex;
+}
+.popup .popup-content .popup-left {
+  width: 40%;
+}
+.popup .popup-content .popup-left .popup-image {
+  display: block;
+  max-height: 40vh;
+  max-width: 100%;
+}
+.popup .popup-content .popup-right {
+  width: 60%;
+  vertical-align: middle;
+  padding: 3rem 5rem;
+}
+.popup .popup-content .popup-right .popup-heading {
+  font-size: 3rem;
+}
+.popup .popup-content .popup-right .popup-text {
+  font-size: 1.4rem;
+}
+.popup .popup-content .popup-right .popup-button {
+  background-color: grey;
+}
+.popup .popup-content .popup-right .popup-close:link, .popup .popup-content .popup-right .popup-close:visited {
+  color: grey;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 4rem;
+  line-height: 1;
+  display: inline-block;
+  transition: all 0.2s;
+}
+.popup .popup-content .popup-right .popup-close:hover {
+  color: black;
 }
 
 .body-home {

@@ -1,10 +1,13 @@
-@import "./util/_variables.scss";
 @import "./util/_colors.scss";
-@import "./components/main.scss";
+@import "./util/_mixins.scss";
+@import "./util/_utilities.scss";
+@import "./util/_variables.scss";
 @import "./components/root.scss";
+@import "./components/main.scss";
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./components/form.scss";
+@import "./components/popup.scss";
 @import "./pages/home.scss";
 @import "./pages/vocabulary.scss";
 @import "./pages/rules.scss";
