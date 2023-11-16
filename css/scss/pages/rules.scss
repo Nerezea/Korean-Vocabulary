@@ -1,0 +1,41 @@
+.rules {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: 0.5em;
+    background-color: $color-grey;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $color-white;
+      font-size: medium;
+
+      &:nth-of-type(1) {
+        padding: 2%;
+        background-color: $opacity-black;
+        margin-bottom: 2%;
+      }
+
+      &:nth-of-type(2) {
+        padding: 2%;
+        background-color: $opacity-black;
+      }
+    }
+
+    .bg1 {
+      background: url(../../../images/andrea-de-santis-ieh0x-LN1NI-unsplash.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .bg2 {
+      background: url(../../../images/pexels-alex-knight-5589596.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+    }
+  }
+}
