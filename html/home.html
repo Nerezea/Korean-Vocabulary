@@ -6,7 +6,7 @@
     <title>Korean Vocabulary - Home</title>
     <link rel="stylesheet" href="../css/app.css" />
   </head>
-  <body>
+  <body class="body-home">
     <header>
       <h1>Korean Vocabulary</h1>
       <nav>
@@ -18,16 +18,18 @@
       </nav>
     </header>
     <main>
-      <form action="submit" id="form_get_new_word">
-        <label for="input_vocabulary" id="current_word">Word</label>
-        <input
-          type="text"
-          name="input_vocabulary"
-          id="input_vocabulary"
-          placeholder="type the word in korean"
-        />
-        <button type="submit">new word</button>
-      </form>
+      <div class="bg-container-home">
+        <form action="submit" id="form_get_new_word">
+          <label for="input_vocabulary" id="current_word">Word</label>
+          <input
+            type="text"
+            name="input_vocabulary"
+            id="input_vocabulary"
+            placeholder="type the word in korean"
+          />
+          <button type="submit">new word</button>
+        </form>
+      </div>
     </main>
     <footer>
       <div class="reserved">®Reserved by Dennis Doedelkopf</div>

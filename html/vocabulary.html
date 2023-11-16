@@ -6,7 +6,7 @@
     <title>Korean Vocabulary - Modify</title>
     <link rel="stylesheet" href="../css/app.css" />
   </head>
-  <body>
+  <body class="body-vocabulary">
     <header>
       <h1>Korean Vocabulary</h1>
       <nav>
@@ -18,50 +18,52 @@
       </nav>
     </header>
     <main>
-      <form action="submit" id="form_add_new_word">
-        <input
-          type="text"
-          name=""
-          id="new_german_word"
-          placeholder="german word"
-        />
-        <input
-          type="text"
-          name=""
-          id="new_english_word"
-          placeholder="english word"
-        />
-        <input
-          type="text"
-          name=""
-          id="new_korean_word"
-          placeholder="korean word"
-        />
-        <input
-          type="text"
-          name=""
-          id="new_pronounciation"
-          placeholder="pronounciation"
-        />
-        <input
-          type="text"
-          name=""
-          id="new_german_keyboard"
-          placeholder="german keyboard"
-        />
-        <input
-          type="text"
-          name=""
-          id="new_english_keyboard"
-          placeholder="english keyboard"
-        />
-        <button type="submit">add new</button>
-      </form>
+      <div class="bg-container-vocabulary">
+        <form action="submit" id="form_add_new_word">
+          <input
+            type="text"
+            name=""
+            id="new_german_word"
+            placeholder="german word"
+          />
+          <input
+            type="text"
+            name=""
+            id="new_english_word"
+            placeholder="english word"
+          />
+          <input
+            type="text"
+            name=""
+            id="new_korean_word"
+            placeholder="korean word"
+          />
+          <input
+            type="text"
+            name=""
+            id="new_pronounciation"
+            placeholder="pronounciation"
+          />
+          <input
+            type="text"
+            name=""
+            id="new_german_keyboard"
+            placeholder="german keyboard"
+          />
+          <input
+            type="text"
+            name=""
+            id="new_english_keyboard"
+            placeholder="english keyboard"
+          />
+          <button type="submit">add new</button>
+        </form>
 
-      <form action="submit" id="form_delete_word">
-        <input type="text" name="" id="delete_word" placeholder="enter id" />
-        <button type="submit">delete word</button>
-      </form>
+        <form action="submit" id="form_delete_word">
+          <input type="text" name="" id="delete_word" placeholder="enter id" />
+          <button type="submit">delete word</button>
+        </form>
+      </div>
     </main>
     <footer>
       <div class="reserved">®Reserved by Dennis Doedelkopf</div>

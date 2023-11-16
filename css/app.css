@@ -18,8 +18,7 @@ main {
 }
 
 body {
-  background: url(../images/pexels-pixabay-373290.jpg);
-  background-size: cover;
+  background-color: black;
 }
 
 header h1 {
@@ -78,14 +77,26 @@ form button {
   margin: 8px 0;
 }
 
-.rules .container {
+.body-home {
+  background: url(../../../images/pexels-ethan-brooke-10264323.jpg);
+  background-size: cover;
+}
+
+.body-vocabulary .bg-container-vocabulary {
+  background: url(../../../images/pexels-ethan-brooke-10264323.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+
+.body-rules .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 250px;
   gap: 0.5em;
   background-color: grey;
 }
-.rules .container div {
+.body-rules .container div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,21 +104,21 @@ form button {
   color: white;
   font-size: medium;
 }
-.rules .container div:nth-of-type(1) {
+.body-rules .container div:nth-of-type(1) {
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.555);
   margin-bottom: 2%;
 }
-.rules .container div:nth-of-type(2) {
+.body-rules .container div:nth-of-type(2) {
   padding: 2%;
   background-color: rgba(0, 0, 0, 0.555);
 }
-.rules .container .bg1 {
+.body-rules .container .bg1 {
   background: url(../../../images/andrea-de-santis-ieh0x-LN1NI-unsplash.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
-.rules .container .bg2 {
+.body-rules .container .bg2 {
   background: url(../../../images/pexels-alex-knight-5589596.jpg);
   background-size: cover;
   background-attachment: fixed;
