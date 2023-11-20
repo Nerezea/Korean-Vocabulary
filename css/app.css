@@ -102,12 +102,6 @@ footer .reserved {
 .card__side--back-1 {
   background-image: linear-gradient(to right bottom, white, black);
 }
-.card__side--back-2 {
-  background-image: linear-gradient(to right bottom, white, black);
-}
-.card__side--back-3 {
-  background-image: linear-gradient(to right bottom, white, black);
-}
 .card:hover .card__side--front {
   transform: rotateY(-180deg);
 }
@@ -133,28 +127,6 @@ footer .reserved {
 .card__heading-span--1 {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0.85));
 }
-.card__heading-span--2 {
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0.85));
-}
-.card__heading-span--3 {
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0.85));
-}
-.card__details {
-  padding: 3rem;
-}
-.card__details ul {
-  list-style: none;
-  width: 80%;
-  margin: 0 auto;
-}
-.card__details ul li {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid grey;
-}
 .card__cta {
   position: absolute;
   top: 50%;
@@ -163,17 +135,17 @@ footer .reserved {
   width: 90%;
   text-align: center;
 }
-.card__price-box {
+.card__text-box {
   text-align: center;
   color: white;
   margin-bottom: 8rem;
 }
-.card__price-only {
-  font-size: 1.4rem;
+.card__uppertext {
+  font-size: 3rem;
   text-transform: uppercase;
 }
-.card__price-value {
-  font-size: 6rem;
+.card__lowertext {
+  font-size: 2rem;
   font-weight: 100;
 }
 @media only screen and (max-width: 56.25em), only screen and (hover: none) {
@@ -195,9 +167,6 @@ footer .reserved {
   .card:hover .card__side--front {
     transform: rotateY(0);
   }
-  .card__details {
-    padding: 1rem 3rem;
-  }
   .card__cta {
     position: relative;
     top: 0%;
@@ -206,10 +175,10 @@ footer .reserved {
     width: 100%;
     padding: 7rem 4rem 4rem 4rem;
   }
-  .card__price-box {
+  .card__uppertext {
     margin-bottom: 3rem;
   }
-  .card__price-value {
+  .card__lowertext {
     font-size: 4rem;
   }
 }

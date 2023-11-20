@@ -1,5 +1,4 @@
 .card {
-  // FUNCTIONALITY
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
@@ -28,14 +27,6 @@
       &-1 {
         background-image: linear-gradient(to right bottom, white, black);
       }
-
-      &-2 {
-        background-image: linear-gradient(to right bottom, white, black);
-      }
-
-      &-3 {
-        background-image: linear-gradient(to right bottom, white, black);
-      }
     }
   }
 
@@ -47,7 +38,6 @@
     transform: rotateY(0);
   }
 
-  // FRONT SIDE STYLING
   &__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -72,45 +62,8 @@
         rgba(black, 0.85)
       );
     }
-
-    &--2 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(white, 0.85),
-        rgba(black, 0.85)
-      );
-    }
-
-    &--3 {
-      background-image: linear-gradient(
-        to right bottom,
-        rgba(white, 0.85),
-        rgba(black, 0.85)
-      );
-    }
   }
 
-  &__details {
-    padding: 3rem;
-
-    ul {
-      list-style: none;
-      width: 80%;
-      margin: 0 auto;
-
-      li {
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 1rem;
-
-        &:not(:last-child) {
-          border-bottom: 1px solid grey;
-        }
-      }
-    }
-  }
-
-  // FRONT SIDE STYLING
   &__cta {
     position: absolute;
     top: 50%;
@@ -120,23 +73,22 @@
     text-align: center;
   }
 
-  &__price-box {
+  &__text-box {
     text-align: center;
     color: white;
     margin-bottom: 8rem;
   }
 
-  &__price-only {
-    font-size: 1.4rem;
+  &__uppertext {
+    font-size: 3rem;
     text-transform: uppercase;
   }
 
-  &__price-value {
-    font-size: 6rem;
+  &__lowertext {
+    font-size: 2rem;
     font-weight: 100;
   }
 
-  //@include respond(tab-port) {
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
     border-radius: 3px;
@@ -158,11 +110,6 @@
       transform: rotateY(0);
     }
 
-    &__details {
-      padding: 1rem 3rem;
-    }
-
-    // FRONT SIDE STYLING
     &__cta {
       position: relative;
       top: 0%;
@@ -172,11 +119,11 @@
       padding: 7rem 4rem 4rem 4rem;
     }
 
-    &__price-box {
+    &__uppertext {
       margin-bottom: 3rem;
     }
 
-    &__price-value {
+    &__lowertext {
       font-size: 4rem;
     }
   }
