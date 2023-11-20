@@ -36,19 +36,17 @@ const getNewWord = async () => {
 
 function popup(event) {
   headingText.innerText = "Right or Wrong";
-  text.innerText = `Current Word: ${currentWord.innerText} (English)
+  text.innerText = `
+  Solution: ${inputWord.value} (Input)
+  Solution: ${currentVocabulary["word-korean"]} (Correct)
+  
+  Current Word: ${currentWord.innerText} (English)
   Current Word: ${currentVocabulary["word-german"]} (German)
 
-  Your Solution: ${inputWord.value}
-  Correct Solution: ${currentVocabulary["word-korean"]}
-  
   Pronuanciation: ${currentVocabulary["pron-korean"]}
 
   Keyboard: ${currentVocabulary["kb-english"]} (English)
   Keyboard: ${currentVocabulary["kb-german"]} (German)
-
-  
-  
   `;
 }
 
