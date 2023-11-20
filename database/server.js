@@ -32,7 +32,7 @@ app.post("/createWord", async (req, res) => {
   }
 });
 
-app.post("/updateVocabularyWords", async (req, res) => {
+app.put("/updateVocabularyWords", async (req, res) => {
   try {
     const jsonArray = jsonConverterWords(vocabularyArray.vocabulary);
 

@@ -8,6 +8,9 @@ const currentWord = document.getElementById("current_word");
 const inputWord = document.getElementById("input_vocabulary");
 const headingText = document.getElementById("popup_heading");
 const text = document.getElementById("popup_text");
+const popupButton = document.getElementById("popup_button");
+
+let currentVocabulary = "hi";
 
 // TODO: Look at current Word and see if u typed it right
 
@@ -15,12 +18,8 @@ async function submitWord(event) {
   event.preventDefault();
 
   const vocabularyList = await getNewWord();
-  currentWord.innerText = randomWordFromVocabulary(vocabularyList);
-
-  console.log(currentWord.innerText);
-  console.log(inputWord.value);
-  console.log(headingText.innerText);
-  console.log(text.innerText);
+  currentVocabulary = randomWordFromVocabulary(vocabularyList);
+  currentWord.innerText = currentVocabulary["word-english"];
 
   formGetNewWord.reset();
 }
@@ -35,4 +34,23 @@ const getNewWord = async () => {
   }
 };
 
+function popup(event) {
+  headingText.innerText = "Right or Wrong";
+  text.innerText = `Current Word: ${currentWord.innerText} (English)
+  Current Word: ${currentVocabulary["word-german"]} (German)
+
+  Your Solution: ${inputWord.value}
+  Correct Solution: ${currentVocabulary["word-korean"]}
+  
+  Pronuanciation: ${currentVocabulary["pron-korean"]}
+
+  Keyboard: ${currentVocabulary["kb-english"]} (English)
+  Keyboard: ${currentVocabulary["kb-german"]} (German)
+
+  
+  
+  `;
+}
+
 formGetNewWord.addEventListener("submit", submitWord);
+popupButton.addEventListener("click", popup);
